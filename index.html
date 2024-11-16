@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSphere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>BlogSphere</h1>
+        <nav>
+            <img src="part 1.png"></img>
+            <a href="#create-post">Create Post</a>
+            <a href="#view-posts">View Posts</a>
+            <a href="#Log in">log in</a>
+            <a href="#About">About</a>
+        </nav>
+    </header>
+
+
+    <section id="create-post">
+        <h2>Create a New Blog Post</h2>
+        <form id="post-form">
+            <input type="text" id="post-title" placeholder="Blog Title" required />
+            <textarea id="post-content" placeholder="Write your blog here..." required></textarea>
+            <button type="submit">Create Post</button>
+        </form>
+    </section>
+
+    <section id="view-posts">
+        <h2>All Blog Posts</h2>
+        <div id="blog-list">
+          
+        </div>
+    </section>
+    <div class="frm">
+    <form id="Log in">
+        <h2>Login</h2>
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <p class="register-link">Don't have an account? <a href="#">Register</a></p>
+    </form>
+    </div>
+    <div id="About">
+        <h2>About us</h2>Welcome to Blogsphere, your ultimate destination for reading, writing, and sharing ideas with a passionate community of creators from around the world. Whether you're an experienced blogger or just starting your writing journey, Blogsphere is here to help you connect, inspire, and express yourself.
+
+        Our Mission
+        At Blogsphere, our mission is simple: to empower people to share their voices, tell their stories, and engage with a global community. We believe that everyone has something valuable to contribute—whether it’s a personal experience, expert advice, creative writing, or unique perspectives. Our platform gives you the tools to bring your ideas to life and connect with readers who share your passions.</div>
+
+
+    <div id="comments-section" style="display:none;">
+        <h3>Comments</h3>
+        <textarea id="comment-text" placeholder="Write a comment..."></textarea>
+        <button id="submit-comment">Post Comment</button>
+        <div id="comments"></div>
+    </div>
+
+    <footer>
+        <p>&copy; made by Akash sharma💐with🌹passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
